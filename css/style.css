@@ -1,0 +1,571 @@
+*{margin: 0;
+padding: 0;}
+
+/* header */
+header{
+    background-image: url(https://www.monederosmart.com/wp-content/uploads/2020/01/82769427_m-e1579724262705.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+}
+
+header img{ 
+    border-radius: 50%;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    color: white;
+    text-shadow: 0 1rem 1rem black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+nav{
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0.5rem ;
+
+}
+video{
+    width: 70%;
+    height: 75%;
+    margin-left: 1rem;
+}
+/* lista FILTRO desplegable */
+#filtro{
+    margin: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    color: gray;
+    background-color: rgb(224, 226, 219);
+}
+/* html registro */
+.volver-index{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+.register{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.2fr;
+    grid-template-areas: 
+    "vid form"
+    "vid send"
+    "vid txt";   
+}
+.register-video{
+    grid-area: vid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.register-formulary{
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-txt{
+    grid-area: txt;
+}
+.register-boton{
+    grid-area: send;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.register-formulary li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+h2{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+}
+.register-txt p{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem; 
+    font-weight: 600;
+}
+.register-boton input{
+    padding: 0.5rem;
+    color: gray;
+    background-color: rgb(224, 226, 219);
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    border-radius: 10%;
+    letter-spacing: 0.1rem;
+    border: 2rem;
+    font-weight: bold;
+}
+.register-formulary input{
+    border-radius: 10%;
+    border-color: lightseagreen;
+    background-color: rgb(224, 226, 219);
+}
+@media screen and (max-width: 768px){
+    .register{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "form"
+        "send"
+        "txt";   
+    }
+    .register-video{
+       display: none;
+    }
+    .register-txt p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* HTML carrito */
+/* img, description y material */
+.seleccionado{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imgs desc"
+    "imgs mat";
+    width: 70%;
+    margin: 0 auto;
+}
+.seleccionado-img{
+    grid-area: imgs;
+}
+.seleccionado-description{
+    grid-area: desc;
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    font-weight: 600;   
+}
+.seleccionado-material{
+    grid-area: mat;
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    font-weight: 600;
+}
+.seleccionado-img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border: solid;
+    border-color: gray;
+    border-radius: 10%;
+}
+@media screen and (max-width: 768px){
+    .seleccionado{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.3fr 0.3fr;
+        grid-template-areas: 
+        "imgs"
+        "desc"
+        "mat";
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+/* HTML CARRITO: form */
+.buy{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.7fr 1fr;
+    grid-template-areas: 
+    "detail"
+    "date"
+    "term";
+    margin: 1rem;
+    padding: 1rem;
+}
+.buy-detail{
+    grid-area: detail;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buy-dates{
+    grid-area: date;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buy-term{
+    grid-area: term ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buy input{
+    border-radius: 10%;
+    background-color: rgb(224, 226, 219);
+    padding: 0.5rem;
+    color: gray;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    border: 2rem;
+    font-weight: bold;
+    border-color: lightseagreen;
+    margin: 0.5rem;
+}
+.buy p{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin: 0.5rem; 
+}
+.buy p b{
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+/* main */
+#Catalogo{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+}
+div ul li{ 
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+/* div ul ul li{
+    visibility: hidden;
+} */
+/* lista desplegable con filtros */
+
+button{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    border-radius: 10%;
+    letter-spacing: 0.1rem;
+    border: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: gray;
+    background-color: rgb(224, 226, 219);
+    margin: 0.5rem;
+}
+#login{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-size: 3rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 1rem;
+    list-style: none;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem; 
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+      
+}
+.section-input{
+    border-radius: 10%;
+    border-color: lightseagreen;
+    background-color: rgb(224, 226, 219);
+}
+.section-button button{
+    border-radius: 10%;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.1rem;
+    border: 2rem;
+    border-color: lightseagreen;
+    font-weight: bold;
+    background-color: lightseagreen;
+    padding: 0.5rem;
+} 
+
+/* flexbox section log in */
+.section-log{
+    text-align:center;
+    margin: 1rem;
+    background-color: rgb(241, 250, 238);
+}
+
+section p{
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(241, 250, 238);
+
+}
+/* footer gral */
+.footer-hour h3{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+#ubicacion{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.footer{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: lightseagreen;
+    list-style: none;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+#volver-menu{
+    background-color: lightseagreen;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.footer-hour{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 0.5rem;
+   
+}
+
+
+/* grid header */
+header{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "logo menus"
+    "icono icono" ;
+
+}
+.logo{
+    grid-area: logo;
+}
+.header-menu{
+    grid-area: menus;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+
+} 
+.header-icono{
+    grid-area: icono; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo menus"
+        "icono icono";
+    };
+    .logo img{
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Catalogo{
+        font-size: 2rem;
+        margin-left:3rem ;
+    }
+    #filtro{ 
+        font-size: 0.7rem;
+        padding: 0.3rem;
+        color: black;
+    }
+}
+/* grid main */
+.main{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+}
+.main-img1{
+    grid-area: img1;    
+}
+.main-img2{
+    grid-area: img2;
+}
+.main-img3{
+    grid-area: img3;
+}
+.main-img4{
+    grid-area: img4;
+}
+.main-img5{
+    grid-area: img5;
+}
+.main-img6{
+    grid-area: img6;
+}
+.main-img1, .main-img2, .main-img3, .main-img4, .main-img5, .main-img6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+@media screen and (max-width: 768px){
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+    }
+} 
+
+/* grid section */
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 0.3fr;
+    grid-template-areas: 
+    "video log"
+    "video bot"
+    "video registro";
+}
+.seccion-log{
+    grid-area: log;
+}
+.section-video{
+    grid-area: video;
+}
+.section-register{
+    grid-area: registro;
+    padding: 0.5rem;
+}
+.section-button{
+    grid-area: bot;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 768px){
+    .section-video{
+        margin: 1rem;
+    }
+    .seccion{
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.4fr 0.3fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        " video"
+        "log"
+        "bot"
+        "registro";
+    }
+    
+}
+/* grid footer */
+.footer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+    "title hora"
+    "mapa hora"
+    "mapa ic";
+}
+#ubicacion{
+    grid-area: title;
+}
+.mapa{
+    grid-area: mapa;
+}
+.footer-icon{
+    grid-area: ic;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.footer-hour{
+    grid-area: hora;
+}
+@media screen and (max-width:768px) {
+    .footer-hour p{
+        display: flex;
+        flex-wrap: wrap;   
+    }    
+}
+

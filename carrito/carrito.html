@@ -1,0 +1,98 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito Óptica Gaona</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Special+Elite&family=Ubuntu+Condensed&display=swap');
+        </style>    
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo.jpg" alt="logo Optica Gaona">
+            <nav class="volver-index">
+                <ul> 
+                    <li><a href="../index.html">Volver a la Página Principal</a></li>  
+                </ul>
+            </nav>
+            <div class="header-icono">
+                <ul>
+                    <li><a href="https://www.instagram.com/opticagaona/?hl=es" target="_blank"><img height="40rem" src="../iconos/instagram-fill.svg" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/Optica-Gaona-107494128602063" target="_blank"><img height="40rem" src="../iconos/facebook-fill.svg" alt=""></a></li>
+                </ul>
+            </div>   
+        </header>
+        <h2>Carrito</h2>
+        <div class="seleccionado">
+            <div class="seleccionado-img"><img src="../img/aviadorBless.jpg" alt="producto elegido"></div>
+            <div class="seleccionado-description"><p>Descripción del producto seleccionado:</p></div>
+            <div class="seleccionado-material"><p>Material:</p></div>
+        </div>
+        <div class="buy">
+        <div class="buy-detail">
+        <form action="post">
+            <p><b>Detalle de la Compra</b></p>
+            <p>Cantidad</p>
+            <input type="number" required="">
+            <!-- no se delimitar para que sean positivos -->
+            <p>Número de Tarjeta</p>
+                <input type="text" required="">
+            <p>Nombre y Apellido</p>
+                <input type="text" required="">
+            <p>Código de Seguridad</p>
+                <input type="text" required="">
+        </form> 
+        </div>
+        <div class="buy-dates">   
+        <form action="post">   
+            <p><b> Datos para el envío y facturación</b></p>
+            <p>Domicilio</p>
+                <input type="text" required="">
+            <p>Localidad</p>
+                <input type="text" required="">
+            <p>Provincia</p>
+                <input type="text" required="">
+            <p>Email</p>
+                <input type="email" required="">
+            <p>Teléfono</p>
+                <input type="number" required=""> <br> <br>
+        </form>
+        </div>
+        <div class="buy-term">
+        <form action="post">   
+                <p>*Si desea que le enviemos un presupuesto, adjunte la receta:</p>
+                <button>Adjuntar</button>
+            <p>*En el caso de que desee un tratamiento especial a sus cristales, 
+                elija de la lista los tratamientos disponibles:</p>
+                <button>Lista de Tratamientos</button>
+            <p>*En el caso de no seleccionar un tratamiento, por defecto se le enviará presupuesto de orgánico con tratamiento antireflejo.</p>
+            <p>*Si desea comprar solo el armazón haga click en Comprar:</p>
+            <button>Comprar</button>
+            <p> Observaciones: </p>    
+            <textarea name="Observaciones" id="" cols="30" rows="10"></textarea>    
+            <br> <br>
+            <input type="submit">
+            <p><b> ¡Muchas Gracias por habernos elegido</b>!</p>
+        </form>
+        </div>
+        </div>  
+        <footer class="footer">
+            <div id="ubicacion"> <b>Ubicación</b></div>
+            <div><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52507.964408496046!2d-58.554255987416525!3d-34.66107224368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fd666dbff3%3A0x7ede337b49b40ef!2sGaona%20%C3%93ptica!5e0!3m2!1ses-419!2sar!4v1657315537296!5m2!1ses-419!2sar" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="footer-hour">
+                <h3><b>Horario</b></h3> <p> Lunes a Viernes de 9:00hs a 13:00hs y de 15:00hs a 19:00hs, Sábados de 9:00hs a 13:00hs. Domingo CERRADO. </p>
+                <h3><b>Medios de Pago</b></h3> <p>Se aceptan todos los medios de pago.</p>
+            
+                <li><img width="18%" src="../iconos/visa.svg" alt=""></li>
+                <li><img width="18%" src="../iconos/mastercard.svg" alt=""></li>
+            </div> 
+            <div class="footer-icon">
+                <li><a href="https://www.instagram.com/opticagaona/?hl=es" target="_blank"><img height="40rem" src="../iconos/instagram-fill.svg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/Optica-Gaona-107494128602063" target="_blank"><img height="40rem" src="../iconos/facebook-fill.svg" alt=""></a></li>
+            </div>
+        </footer>    
+    </body>
+    </html>

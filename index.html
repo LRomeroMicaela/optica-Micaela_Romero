@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Gaona</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Special+Elite&family=Ubuntu+Condensed&display=swap');
+    </style>   
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./img/logo.jpg" alt="logo Optica Gaona"></div>
+        <nav class="header-menu">
+            <ul> 
+                <li><a class="nav-hover" href="#Catalogo">Catálogo</a></li>
+                <li><a class="nav-hover" href="./carrito/carrito.html">Carrito</a></li>
+                <li><a class="nav-hover" href="#login">Log In</a></li>
+                <li><a class="nav-hover" href="./registro/registro.html">Registrarse</a></li>
+                <li><a class="nav-hover" href="#ubicacion">Ubicación</a></li>   
+            </ul>
+        </nav>
+        <div class="header-icono">
+            <ul>
+                <li><a href="https://www.instagram.com/opticagaona/?hl=es" target="_blank"><img height="40rem" src="./iconos/instagram-fill.svg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/Optica-Gaona-107494128602063" target="_blank"><img height="40rem" src="./iconos/facebook-fill.svg" alt=""></a></li>
+            </ul>
+        </div>    
+    </header>
+    <div>
+        <h2 id="Catalogo">Catálogo</h2>
+        <div>
+            <select name="Filtro" id="filtro">
+                <option value="all">Todos</option>
+                <option value="MR">Mujer Recetados</option>
+                <option value="HR">Hombre Recetados</option>
+                <option value="MS">Mujer Lentes de Sol</option>
+                <option value="HS">Hombre Lentes de Sol</option>
+                <option value="N">Niños</option>
+            </select>
+        </div>
+    </div>    
+    <main> 
+        <div class="main">
+        <div class="main-img1"><img src="./img/aviadorBless.jpg"  alt="anteojo violeta acetato">
+        <button>Agregar al Carrito</button></div>
+        <div class="main-img2"><img  src="./img/davorHSol.jpg"  alt="anteojo negro marco metal">
+        <button>Agregar al Carrito</button></div>
+        <div class="main-img3"><img  src="./img/hexagonalBless.jpg"   alt="anteojo animal print">
+        <button>Agregar al Carrito</button></div>
+        <div class="main-img4"><img  src="./img/pinUp.jpg"   alt="rusty espejado celeste">
+        <button>Agregar al Carrito</button></div>
+        <div class="main-img5"><img  src="./img/solMildura.jpg"  alt="hombre plateado">
+        <button>Agregar al Carrito</button></div>
+        <div class="main-img6"><img  src="./img/solMuzik.jpg"  alt="rusty negro">
+        <button>Agregar al Carrito</button></div>
+        </div>      
+    </main>    
+        <div class="main-carrrito"><p><a class="animate_carrito" href="./carrito/carrito.html">Ir al Carrito</a></p></div>
+        
+    
+    <h2 id="login">Log In</h2>
+    <section class="seccion">    
+        <div class="section-video"><video src=".//video/10000000_432199925279220_5911460759689936966_n.mp4" controls></video></div>
+        <div class="section-log">
+            <form action="post">
+                <p><li>Usuario:</li></p>
+                <input class="section-input" type="text">
+            </form>
+                 
+            <form action="post">
+            <p><li>Contraseña:</li></p>
+                <input class="section-input" type="password">
+            </form>
+            <div class="section-button"><button>Acceder</button></div>
+            
+            <p><a class="section-register" href="./registro/registro.html">Registrarse</a></p> 
+            <!-- formulario para loguearse -->
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div id="ubicacion"> <b>Ubicación</b></div>
+        <div><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52507.964408496046!2d-58.554255987416525!3d-34.66107224368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fd666dbff3%3A0x7ede337b49b40ef!2sGaona%20%C3%93ptica!5e0!3m2!1ses-419!2sar!4v1657315537296!5m2!1ses-419!2sar" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="footer-hour">
+            <h3><b>Horario</b></h3> <p> Lunes a Viernes de 9:00hs a 13:00hs y de 15:00hs a 19:00hs, Sábados de 9:00hs a 13:00hs. Domingo CERRADO. </p>
+            <h3><b>Medios de Pago</b></h3> <p>Se aceptan todos los medios de pago.</p>
+        
+            <li><img width="18%" src="./iconos/visa.svg" alt=""></li>
+            <li><img width="18%" src="./iconos/mastercard.svg" alt=""></li>
+        </div> 
+        <div class="footer-icon">
+            <li><a href="https://www.instagram.com/opticagaona/?hl=es" target="_blank"><img height="40rem" src="./iconos/instagram-fill.svg" alt=""></a></li>
+            <li><a href="https://www.facebook.com/Optica-Gaona-107494128602063" target="_blank"><img height="40rem" src="./iconos/facebook-fill.svg" alt=""></a></li>
+        </div>
+    </footer> 
+    <div>
+        <a id="volver-menu" href="./index.html"><img src="./iconos/chevron-triple-up.svg" alt=""></a>
+    </div>
+</body>
+</html>
