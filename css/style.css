@@ -568,4 +568,56 @@ header{
         flex-wrap: wrap;   
     }    
 }
+/* ANIMACIONES */
+/* animate header*/
+.nav-hover:hover{
+    background: rgb(244,245,227);
+    background: radial-gradient(circle, rgba(244,245,227,1) 0%, rgba(255,214,61,1) 53%, rgba(255,201,40,0.7866379310344828) 100%);
+    transition: background-color .5s;
+    color:gray;
+}
+a:hover{
+    text-decoration: underline;
+    transition: background-color .5s;
+}
+/* animate main */
+.main-img1:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img2:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img3:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img4:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img5:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img6:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.animate_carrito:hover{
+    background-color: lightseagreen;
+    transition: background-color 2s;
+    padding: 0.5rem;
+}
+/* animate log in */
+.section-button:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.section-register:hover{
+    background-color: lightseagreen;
+    transition: background-color 2s;
+    padding: 0.5rem;
+}
 
