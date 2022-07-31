@@ -386,6 +386,9 @@ section p{
     padding: 0.5rem;
    
 }
+#mediopago{
+    max-width: 18%;
+}
 
 
 /* grid header */
@@ -566,7 +569,24 @@ header{
     .footer-hour p{
         display: flex;
         flex-wrap: wrap;   
-    }    
+    }
+    .footer{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "title"
+        "mapa"
+        "hora"
+        "ic";
+    } 
+    #mediopago{
+        max-width: 12%;
+    }
+    .footer-icon{
+        max-width: 100%;
+    }
 }
 /* ANIMACIONES */
 /* animate header*/
