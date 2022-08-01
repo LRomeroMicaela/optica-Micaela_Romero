@@ -497,6 +497,12 @@ header{
         "img4"
         "img5"
         "img6";
+        margin-right: 1rem;
+    }
+    .main-img1, .main-img2, .main-img3, .main-img4, .main-img5, .main-img6{
+        max-width: 85%;
+        display: flex;
+        align-items: center;
     }
 } 
 
